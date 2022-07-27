@@ -46,24 +46,24 @@ function timerCycle() {
     }
 
     timer.innerHTML = `
-    <div class="second">${sec}</div>
+    <div class='second'>${sec}</div>
     <div>:</div>
-    <div class="minute">${min}</div>
+    <div class='minute'>${min}</div>
     <div>:</div>
-    <div class="hour">${hr}</div>
+    <div class='hour'>${hr}</div>
     `;
 
-    setTimeout("timerCycle()", 1000);
+    setTimeout('timerCycle()', 1000);
   }
 }
 
 function resetTimer() {
     timer.innerHTML = `
-    <div class="second">00</div>
+    <div class='second'>00</div>
     <div>:</div>
-    <div class="minute">00</div>
+    <div class='minute'>00</div>
     <div>:</div>
-    <div class="hour">00</div>
+    <div class='hour'>00</div>
     `;
     stoptime = true;
     hr = 0;
